@@ -90,24 +90,25 @@ let indexqosh = toqindex(array);
 console.log(indexqosh);
 
 6.
-
+*/
+/*
 function findComplexNumbers(arr) {
   const complexNumbers = [];
-  
+
   for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] === 'object') {
+    if (typeof arr[i] === "object") {
       complexNumbers.push(i);
     }
   }
-  
+
   return complexNumbers;
 }
 
 const arr = [1, 2, [3, 4], 5, [6, [7, 8]], 9];
 
 const complexNumbers = findComplexNumbers(arr);
-console.log(complexNumbers); 
-
+console.log(complexNumbers);*/
+/*
 7.
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -172,5 +173,156 @@ function kamayishTartibida(arr) {
 var inputArr = [5, 2, 8, 4, 0, 1];
 var outputArr = kamayishTartibida(inputArr);
 console.log(outputArr); // [ 4, 5, 1, 2, 8, 0 ]
+
+*/
+/*
+let produckt = [
+  {
+    name: "olma",
+    price: 1200,
+  },
+  {
+    name: "nok",
+    price: 5200,
+  },
+  {
+    name: "kivi",
+    price: 8200,
+  },
+];
+
+let summa = 0;
+for (let i = 0; i < produckt.length; i++) {
+  summa += produckt[i].price;
+}
+console.log(summa);
+*/
+/*
+const people = [
+  {
+    name: "Abdulaziz",
+    age: 33,
+  },
+  {
+    name: "erkin",
+    age: 22,
+  },
+  {
+    name: "Temur",
+    age: 34,
+  },
+  {
+    name: "sardor",
+    age: 20 ,
+  },
+];
+
+let num = 0;
+for (let i = 0; i < people.length; i++) {
+  num += people[i].age;
+}
+console.log(num / people.length);
+*/
+
+/*
+11.
+function LastElement(arr) {
+  arr.pop();
+  return arr;
+}
+
+let arr = [1, 2, 3, 4, 5];
+let newArr = LastElement(arr);
+console.log(newArr);
+
+12.
+function removeDuplicates(arr) {
+  let uniqueArray = [];
+
+  arr.forEach((element) => {
+    if (!uniqueArray.includes(element)) {
+      uniqueArray.push(element);
+    }
+  });
+
+  return uniqueArray;
+}
+
+let arr = [1, 2, 3, 2, 4, 5, 1, 6, 5];
+let newArr = removeDuplicates(arr);
+console.log(newArr);
+
+13.
+
+let n = parseInt(prompt("son kiriting"));
+let arr = [];
+
+for (let i = 0; i < n; i++) {
+  let value = parseInt(prompt(` ${i}. Indeksdagi qiymatni kiriting:`));
+  arr.push(value);
+}
+
+let evenOdd = prompt("juft yoki toq");
+
+if (evenOdd === "juft") {
+  arr.forEach((element, index) => {
+    if (index % 2 === 0) {
+      console.log(element);
+    }
+  });
+} else if (evenOdd === "toq") {
+  arr.forEach((element, index) => {
+    if (index % 2 !== 0) {
+      console.log(element);
+    }
+  });
+} else {
+  console.log(" 'Juft' yoki 'toq' kiriting.");
+}
+
+14.
+
+let n = parseInt(prompt("son kiriting"));
+let arr = [];
+let sum = 0;
+
+for (let i = 0; i < n; i++) {
+  let value = parseInt(prompt(`${i}. Indeksdagi qiymatni kiriting`));
+  arr.push(value);
+  sum += value;
+}
+
+console.log(" Elementlarining yig'indisi: " + sum);
+
+15.
+
+let n = parseInt(prompt("Son kiritib oling"));
+let arr = [];
+let sum = 0;
+
+for (let i = 0; i < n; i++) {
+  let value = parseInt(prompt(` ${i}. indexdagi qiymatni kiriting`));
+  arr.push(value);
+  sum += value;
+}
+
+console.log("Elementlarining yig'indisi" + sum);
+
+16.
+
+let a = [1, 2, 3, 4, 5];
+let b = [5, 6, 7, 8, 9];
+
+let commonValues = [];
+
+for (let i = 0; i < a.length; i++) {
+  for (let j = 0; j < b.length; j++) {
+    if (a[i] === b[j]) {
+      commonValues.push(a[i]);
+    }
+  }
+}
+
+console.log(commonValues);
 
 */
